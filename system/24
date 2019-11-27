@@ -1,0 +1,6 @@
+# Find the command that lists all packages
+
+apt list --installed
+
+# dpkg-query -l | less      gives summary of what each package does
+# dpkg-query -l | grep <package name to search>

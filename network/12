@@ -1,0 +1,5 @@
+# Find the IP that was assigned to you by DHCP server
+# DHCP (Dynamic Host Configuration Protocol) used for distribution of IP addresses
+#   within a network. YIADDR is your assigned IP address and can be found using ipconfig.
+
+ipconfig getpacket en0 | awk '/yiaddr = /{print $3}'

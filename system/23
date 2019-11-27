@@ -1,0 +1,4 @@
+# Explain how to connect yourself as a new user (With graphic session and ssh session)
+
+Graphic session: enter username and create password
+SSH session: ssh <username>@<ip_address>

@@ -1,0 +1,5 @@
+# Name the command that determines the state of the SSH service
+# install openssh-server: sudo apt install openssh-server
+# check the status of the SSH service:
+
+systemctl status ssh

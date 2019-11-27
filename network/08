@@ -1,0 +1,6 @@
+# Find the provider of slash16.org (deduction)
+
+slash16.org is hosted by AWS
+
+# Find the IP address of slash16.org using nslookup slash16.org
+# Use 'whois 99.84.231.140' to find the provider

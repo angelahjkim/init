@@ -1,0 +1,9 @@
+# Find the service which makes it possible to run specific tasks following
+#	a regular schedule
+
+cron / crontab
+
+# Cron: The software utility cron is a time-based job scheduler.
+#	Users that set up and maintain software environments use cron to schedule jobs 
+#	(commands or shell scripts) to run periodically at fixed times, dates, or intervals
+# https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/

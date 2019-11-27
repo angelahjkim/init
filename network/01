@@ -1,0 +1,6 @@
+# ifconfig -l flag is used to list all the available interfaces on the system
+# with no additional information
+#   grep prints lines which contain 'pattern'
+#   awk '{print $#}' prints only the #th column from the input field
+
+ifconfig -l

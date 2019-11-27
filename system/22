@@ -1,0 +1,4 @@
+# Find the command that adds a new local user
+# https://www.tecmint.com/add-users-in-linux/
+
+sudo adduser new_user

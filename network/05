@@ -1,0 +1,6 @@
+# Identify the IP address of the DNS that responds to the following url: slash16.org
+# DNS: Domain Name System-- maintain directories of domain names and translate them to IP addresses
+# slash16.org is hosted by Amazon Route 53 AWS (IANA WHOIS lookup)
+# http://www.steves-internet-guide.com/dns-guide-beginners/
+
+nslookup slash16.org | awk '/Server/{print $2}'

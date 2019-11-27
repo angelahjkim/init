@@ -1,0 +1,7 @@
+# Identify the default gateway in the routing table
+# -- default gateway: access point for outbound connections to other networks
+#						allows computers on different networks to communicate with each other
+# -- routing table:	set of rules using route information to determine
+# 					where data packets traveling over an IP network will be directed
+
+netstat -nr | awk '/default/{print $2; exit}'

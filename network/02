@@ -1,0 +1,6 @@
+# Identify and display the Ethernet interface characteristics:
+# -- Identify broacast address
+# -- Identify all IP addresses which are part of the same subnet
+
+ifconfig en0 | awk '/broadcast/{print $6}'
+ifconfig en0 | awk '/inet/{print $2}'

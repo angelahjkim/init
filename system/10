@@ -1,0 +1,4 @@
+# Name the command that lists the partition tables of drives?
+# Partition table: contains info about logical disks / partitions
+
+sudo fdisk -l

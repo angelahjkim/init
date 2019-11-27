@@ -1,0 +1,8 @@
+# Find the external IP of 42.fr (command output)
+# -- External IP: address assigned by your Internet Service Provider
+# -- to your router interface which is connected to the internet
+
+# nslookup 42.fr
+# host 42.fr
+
+echo "163.172.250.12\n163.172.250.13"

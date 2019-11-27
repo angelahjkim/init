@@ -1,0 +1,11 @@
+# Make the intra.42.fr address reroute to 46.19.122.85
+# hosts file used to map hostnames to IP addresses (deduction)
+
+
+echo 'cdn.intra.42.fr 46.19.122.85' >> /etc/hosts
+
+
+# you can modify the file to change where specific domain names point to when you
+# -- access them in the browser
+
+# no admin rights, permissions denied

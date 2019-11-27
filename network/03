@@ -1,0 +1,7 @@
+# MAC (media access control) address of the Wi-Fi card
+# -- unique numeric identifier used to distinguish a device from others
+# -- on a network; assigned by the manufacturer for both Ethernet and Wi-Fi cards
+# en01 --> wired physical address 
+# en02 --> wireless physical address
+
+ifconfig | awk '/en1: /{getline; print $2}'

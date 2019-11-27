@@ -1,0 +1,13 @@
+# Find the command that allows you to connect via ssh on the VM
+# (in parallel with the graphic session)
+
+ssh -p 22 username@ip_address
+
+
+# SSH: https://www.2daygeek.com/start-stop-restart-enable-reload-openssh-server-service-in-linux/ 
+# https://help.skytap.com/Using_SSH_to_Connect_to_a_Linux_VM.html
+# How To Ssh Into Linux Virtualbox/Virtual Machine From Host Machine/Same Computer:
+# https://www.youtube.com/watch?v=ErzhbUusgdI&app=desktop
+
+# Create a published service for the SSH server (on port 22)
+# Start ssh service on Debian

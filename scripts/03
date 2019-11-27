@@ -1,0 +1,17 @@
+# Write a script of your choice
+# Update a git repository
+
+echo 'Is this a git repository? [y\N]: '
+
+read response
+
+if [ $response == "y" ]
+then
+	read -p 'Add a commit message: ' msg
+	git add .
+	git commit -m "$msg"
+	git add -u
+	git push
+else
+	echo 'Please use me in a git repository.'
+fi

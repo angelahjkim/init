@@ -1,0 +1,7 @@
+# Use the output of the previous command to find the name and IP address of the
+# device that makes the link between you (local network) and the outside world. (deduction)
+
+The name and IP address of the device can be found using "traceroute slash16.org."
+    nat (10.90.1.11)
+
+# nat (network address translation) - links the local network and the outside world.

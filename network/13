@@ -1,0 +1,3 @@
+# Using the IP assigned to you by the DHCP server & reverse DNS; find the name of your host
+
+ipconfig getpacket en0 | awk '/yiaddr = /{print $3}' | nslookup | awk '/name = /{print $4}'

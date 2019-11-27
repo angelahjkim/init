@@ -1,0 +1,14 @@
+# Run the 'tail -f /var/log/syslog' command in background
+
+sudo tail -f /var/log/syslog &
+
+# Background process: a process that runs without user intervention
+# 	process running independently of the shell
+#	--> ex. processes that do tasks including scheduling, notifications
+#		logging, system monitoring
+# You can run a process in the background by using '&'
+# 	--> shell's built-in append operator
+# jobs command will show processes running in the background
+
+# Job Control -- Shell
+# 	http://linuxcommand.org/lc3_lts0100.php

@@ -1,0 +1,6 @@
+# List all real users on the VM
+
+cat /etc/passwd | grep '/home' | awk -F: '{print $1}'
+
+# https://unix.stackexchange.com/questions/423850/how-to-list-users-in-linux-local-remote-real-and-all-users
+# real users: users on the system that have a home directory
