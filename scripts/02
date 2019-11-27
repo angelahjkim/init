@@ -1,2 +1,20 @@
 # Write a script which deletes an ACTIVE user on the VM
 
+echo -n 'Which user do you want to delete?: '
+
+read user
+
+getent passwd $user > /dev/null 2&>1
+if [ $? -eq 0 ]; then
+    echo "The user exists and has been removed."
+    sudo userdel $user
+else
+    echo "The user does not exist."
+fi
+
+
+# Redirect to /dev/null if you want to completely silent your application.
+# 2>&1: Redirect stderr to stdout, so any errors also go to /dev/null
+# $? Stores the exit value of the last command that was executed
+# genent passwd <value>: looks up entries in passwd database for a match to <value>
+#   and returns a 0 if found
